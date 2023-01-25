@@ -1,0 +1,116 @@
+.OuterDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+   
+}
+.add{
+    padding-top: 10px;
+    padding-right: 8px;
+    // border: 10px;
+    margin: 0 5px;
+    .material-symbols-outlined{
+        padding: 10px;
+    }
+    .divImg{
+        // display: flex;
+        width: 23px;
+        height: 23px;
+        //padding-left: 20px;
+        position: relative;
+       display: inline-block;
+    }
+}
+    .colour{
+        height: 130px;
+        width: 170px;
+       border: 0px solid blue;
+      display: flex;
+      justify-content: space-around;
+    }
+
+.colors{
+    height: 40px;
+    width: 40px;
+    border-radius: 100px;
+   border: 0px solid red;
+}
+.icons{
+    height: 30px;
+}
+.add:hover .hovercontent{
+    display: block;
+}
+.add:hover .hovercontent2{
+    display: block;
+}
+.add:hover .hovercontent3{
+    display: block;
+}
+.hovercontent{
+    display: none;
+  position: absolute;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.591);
+  min-width: 69px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+}
+.hovercontent1{
+    display: none;
+  position: absolute;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.573);
+  min-width: 69px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+}
+.hovercontent2{
+    display: none;
+  position: absolute;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.573);
+  min-width: 45px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+}
+.hovercontent3{
+    display: none;
+  position: absolute;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.573);
+  min-width: 35px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+}
+.hovercontent4{
+    display: none;
+  position: absolute;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.573);
+  min-width: 35px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+}
+
+.buttons:hover .hovercontent4{
+    display: block;
+}
+.bott:hover .hovercontent1{
+    display: block;
+}

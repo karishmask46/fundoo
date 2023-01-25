@@ -1,0 +1,32 @@
+<div class="grid-getAllNotes" [ngClass]="isList ? 'list-getAllNotes' : 'grid-getAllNotes'">
+    <div *ngFor="let notes of childMessage | filter:search" class="con">
+        <mat-card class="card" [style.background]="notes.color">
+            <div class="details">
+                <div class="let">
+                    <h2 (click)="openDialog(notes)">{{notes.title}}</h2>
+                    <div class="add">
+                        <img height="25px" width="25px" class="pin"
+                            src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                        <div class="hovercontent">
+                            <p>Pin note</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="para" (click)="openDialog(notes)">{{notes.description}}</p>
+            </div>
+            <div class="dispalyd">
+                <div class="dispalydata" *ngFor="let display of notes.collaborators">
+                    <p class="initial" (click)="onclickletter(notes)">{{display.firstName | shortname }}</p>
+                    <!-- <img height="10%" width="10%" src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
+                    <!-- <div style="padding-left: 10px;">
+                    <b>{{display.firstName}}</b>
+                    <p>{{display.email}}</p>
+                </div> -->
+                </div>
+            </div>
+            <div class="con1" *ngIf="notes">
+                <app-icon [notecard]="notes" (trashrefresh)="iconautorefresh($event)"></app-icon>
+            </div>
+        </mat-card>
+    </div>
+</div>

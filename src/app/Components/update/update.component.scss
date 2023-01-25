@@ -1,0 +1,91 @@
+.maindiv{
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px solid gray;
+}
+.subdiv{
+    height: 55px;
+    display: flex;
+    align-items: flex-start;
+    border: 0px solid gray;
+    font-size: larger;
+}
+.note1{
+    border: 0px solid gray;
+    outline: none;
+    height:35px;
+    width: 500px;
+    box-sizing: border-box;
+    resize: none;
+    font-weight: bold;
+    letter-spacing: .00625em;
+    display: flex;
+    font-size: large; 
+    text-decoration: center;
+    margin-left: 10px;
+}
+.note4{
+    border: 0px solid gray;
+    outline: none;
+    box-sizing: border-box;
+    resize: none;
+    background: 0px;
+    font-size: medium;
+    margin-right: 30px;
+
+}
+.note2{
+    border: 0px solid gray;
+    outline: none;
+    height: 30px;
+    display: flex;
+    box-sizing: border-box;
+    resize: none;
+    background: 0px;
+    font-size: medium;
+font-size:small; 
+margin-left: 10px;
+
+}
+.note3{
+    height: 45px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0px solid red;
+}
+.pin{
+    margin-right: 20px;
+}
+.dispalyd{
+    display: flex;
+    flex-direction: row;
+    border: 0px solid red;
+    width: auto;
+  height: 30px;
+}
+.dispalydata{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid red;
+    height: 50px;
+    width: 40px;
+}
+.initial{
+    border: 0px solid red;
+  font-size: 17px;
+  height: 100px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  background:violet;
+  border-radius: 25px;
+}

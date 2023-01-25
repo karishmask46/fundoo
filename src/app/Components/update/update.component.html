@@ -1,0 +1,22 @@
+<div class="maindiv" [style.background]="color" >
+    <input [style.background]="color" class="note1" type="text" [(ngModel)]="title">
+    <img height="25px" width="25px" class="pin" src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+</div>
+<div class="subdiv" [style.background]="color">
+    <input class="note2" type="text" [(ngModel)]="description">
+</div>
+<div class="dispalyd" [style.background]="color">
+<div class="dispalydata" *ngFor="let display of collabdata" >
+    <p class="initial" (click)="onclickletter()" >{{display.firstName | shortname }}</p>
+    <!-- <img height="10%" width="10%" src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
+    <!-- <div style="padding-left: 10px;">
+        <b>{{display.firstName}}</b>
+        <p>{{display.email}}</p>(click)=" onclickletter()"
+    </div> -->
+</div>
+</div>
+<div class="note3" [style.background]="color">
+    <app-icon [notecard]="data" (trashrefresh)="colorpallate($event)"></app-icon>
+    <button class="note4" (click)="onNoClick()"
+        (click)="openSnackBar('Note updated successfully','dismiss')">Close</button>
+</div>

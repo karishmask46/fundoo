@@ -1,0 +1,959 @@
+.maincontainer{
+    height: 100vh;
+    width: 100vw;
+    border: 0px solid red;
+}
+.maincontainer-xs{
+    height: 100vh;
+    width: 100vw;
+    border: 0px solid red;
+   
+}
+.subcontainer{
+    height: 95%;
+    width: 60%;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.subcontainer-xs{
+    width: 100%;
+    border: 0px solid gainsboro;
+    border-radius: 10px;
+}
+.content{
+    height: 100%;
+    width: 55%;
+    border: 0px solid gainsboro;
+}
+.content-xs{
+    height: 100%;
+    width: 100%;
+    border: 0px solid gainsboro;
+
+}
+.content1{
+    height: 12%;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+    left: 30px;
+}
+.content2{
+    height: 10%;
+    width: 60%;
+    font-size: 20px;
+    font-weight: 200;
+    position: relative;
+    left: 25px;
+    border: 0px solid gainsboro;
+
+}
+.content3{
+    height: 12%;
+    width: 95%;
+    border: 0px solid gainsboro;
+    display: flex;
+    position: relative;
+    left: 15px;
+}
+.content4{
+    height: 10%;
+    width: 95%;
+    border: 0px solid gainsboro;
+    display: flex;
+    color: rgb(86, 82, 82);
+    font-size: 12px;
+    position: relative;
+    left: 5px;
+    bottom:20px;
+}
+.content5{
+    height: 5%;
+    width: 95%;
+    border: 0px solid gainsboro;
+    display: flex;
+    position: relative;
+    color: blue;
+    left: 20px;
+    top: 5px;
+}
+.username-xs{
+    width: 95%;
+    position: relative;
+   left: 5px;
+
+}
+.content6{
+    height: 22%;
+    width: 100%;
+    display: flex;
+    border: 0px solid gainsboro;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 5px;
+}
+.content6-xs{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 15px;
+    border: 0px solid gainsboro;
+}
+.field3-xs{
+    width: 90%;
+}  
+
+.content7{
+    height: 8%;
+    width: 78%;
+    border: 0px solid gainsboro;
+    display: flex;
+    position: relative;
+    color: rgb(86, 82, 82);
+    font-size: 13px;
+    left: 20px;
+    bottom: 45px;
+}
+.content7-xs{
+display: none;
+}
+.xnsj-xs{
+    display: none;
+}
+.subcon{
+    height:10%;
+    width: 100%;
+    border: 0px solid gainsboro; 
+}
+.subcon-xs{
+    height:25%;
+    width: 100%;
+    display: flex;
+    border: 0px solid gainsboro;
+    position: relative;
+    left: 20px;
+    bottom: 30px;
+}
+.field1{
+     height: 5px !important;
+     width:45%;
+     font-size: 11px;
+     
+}
+.field1-xs{
+    height: 0px !important;
+    width:90%;
+    font-size: 11px;
+}
+.field2{
+     width:45%;
+     font-size: 11px;
+     display: flex;
+}
+.field2-xs{
+     width:100%;
+     font-size: 11px;
+     display: flex;
+}
+
+.box2{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    border: 0px solid gainsboro;
+}
+.box3{
+    height: 40%;
+    width: 40%;
+    border: 0px;
+    background: 0px;
+    color: rgb(0, 115, 255);
+    font-size: 15px;
+    font-weight: 600;
+}
+.box3-xs{
+    position: relative;
+    top: 30px;
+    right: 30px;
+}
+.box4{
+    height: 55%;
+    width: 16%;
+    border: 0px;
+    color: white;
+   background-color:rgb(0, 115, 255);
+    border-radius: 5px; 
+}
+.box4-xs{
+    position: relative;
+    right: 50px;
+    top: 30px;
+}
+.imagecontain{
+    height: 100%;
+    width: 45%;
+    border: 0px solid gainsboro;
+}
+.imagecontain-xs{
+    width: 0%;
+    display:none;
+}
+.sentence{
+    height: 10%;
+    width: 70%;
+    border: 0px solid green;
+    position: relative;
+    bottom: 100px;
+    font-size: 16px;
+    color: rgb(80, 78, 78);
+    text-align: center;
+    font-weight: 200;
+}
+.sentence-xs{
+    display: none;
+    border: 0px solid red;
+}
+.example-margin{
+display: flex;
+border: 0px solid red;
+}
+.box{
+    display: flex;
+        border: 0px solid blue;
+        position: relative;
+        left: 25px;
+        // bottom:20px ;
+        color: rgb(86, 82, 82); 
+}
+@media only screen and (min-width :320px) and (max-width :480px) {
+    .maincontainer{
+       height:  1000px;
+       width: 600px;
+       border: 0px solid red;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+    .subcontainer{
+        height: 100%;
+        width: 100%;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .content{
+        height: 100%;
+        width: 95%;
+        border: 0px solid red;
+    }
+   
+    .content1{
+        height: 12%;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 500;
+        position: relative;
+        left: 40px;
+        top: -40px;
+        border: 0px solid red;
+    }
+    .content2{
+        height: 10%;
+        width: 70%;
+        font-size: 30px;
+        font-weight: 400;
+        position: relative;
+        left: 40px;
+        bottom: 40px;
+        border: 0px solid red;
+    
+    }
+    .content3{
+        height: 12%;
+        width: 94.5%;
+        display: flex;
+        position: relative;
+        left: 20px;
+        bottom: 60px;
+        border: 0px solid red;
+    }
+    .content4{
+        height: 15%;
+        width: 95%;
+        display: flex;
+        color: rgb(86, 82, 82);
+        font-size: 13px;
+        position: relative;
+        left: 5px;
+        bottom:10px;
+        border: 0px solid red;
+    }
+    .content5{
+        height: 10%;
+        width: 95%;
+        font-size: larger;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        color: blue;
+        left: 25px;
+        top: -50px;
+        bottom: 40px;
+    border: 0px solid red;
+    }
+   
+    .content6{
+        height: 6%;
+        width: 100%;
+        border: 0px solid gainsboro;
+        position: relative;
+        left: 30px;
+        bottom: 100px;
+       
+    }
+    
+    
+    .content7{
+        height: 8%;
+        width: 78%;
+        border: 0px solid red;
+        display: flex;
+        position: relative;
+        color: rgb(86, 82, 82);
+        font-size: 13px;
+        left: 25px;
+        bottom: 50px;
+    }
+   
+    .subcon{
+        height:15%;
+        width: 90%;
+        position: relative;
+         bottom: 50px;
+        border: 0px solid red;
+    }
+    
+   
+    .field1{
+         height: 0px !important;
+         width:100%;
+         font-size: 11px;
+         border: 0px solid red;
+         position: relative;
+         bottom: 30px;
+         
+    }
+    .fieldw{
+        height: 5px !important;
+        width:90%;
+        font-size: 11px;
+        position: relative;
+        bottom: 100px;
+        right:5px;
+        
+    }
+   
+    .field2{
+         width:45%;
+         font-size: 11px;
+         display: flex;
+    }
+    
+    .box{
+        display: flex;
+        border: 0px solid blue;
+        position: relative;
+        left: 25px;
+        bottom:20px ;
+        color: rgb(86, 82, 82);
+    }
+   
+    .box2{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        border: 0px solid gainsboro;
+    }
+    .box3{
+        height: 40%;
+        width: 40%;
+        border: 0px;
+        background: 0px;
+        color: rgb(0, 115, 255);
+        font-size: 18px;
+        font-weight: 600;
+        position: relative;
+        right: 30px;
+    }
+    
+    .box4{
+        height: 55%;
+        width: 18%;
+        border: 0px;
+        color: white;
+        font-size: 20px;
+        font-weight: 400;
+       background-color:rgb(0, 115, 255);
+        border-radius: 5px;
+        position: relative; 
+        right: 15px;
+    }
+    
+    .imagecontain{
+        height: 100%;
+        width: 45%;
+        border: 0px solid gainsboro;
+        display: none;
+        visibility: hidden;
+    }
+    
+    .sentence{
+        height: 10%;
+        width: 70%;
+        border: 0px solid green;
+        position: relative;
+        bottom: 100px;
+        font-size: 16px;
+        color: rgb(80, 78, 78);
+        text-align: center;
+        font-weight: 200;
+        display: none;
+    }
+    
+}
+@media only screen and (min-width :481px) and (max-width :600px) {
+    .maincontainer{
+        height:  1000px;
+        width: 600px;
+     }
+     .subcontainer{
+        margin: 67px;
+         height: 100%;
+         width: 100%;
+         border: 1px solid gainsboro;
+         border-radius: 10px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+     } 
+     .content{
+         height: 100%;
+         width: 95%;
+         border: 0px solid red;
+     }
+    
+     .content1{
+         height: 12%;
+         width: 100%;
+         font-size: 35px;
+         font-weight: 500;
+         position: relative;
+         left: 25px;
+         bottom: 40px;
+         border: 0px solid red;
+     }
+     .content2{
+         height: 10%;
+         width: 60%;
+         font-size: 25px;
+         font-weight: 500;
+         position: relative;
+         left: 25px;
+         bottom: 40px;
+         border: 0px solid red;
+     
+     }
+     .content3{
+         height: 12%;
+         width: 93.5%;
+         display: flex;
+         position: relative;
+         left: 20px;
+         bottom: 60px;
+         border: 0px solid red;
+     }
+     .content4{
+         height: 15%;
+         width: 95%;
+         display: flex;
+         color: rgb(86, 82, 82);
+         font-size: 13px;
+         position: relative;
+         left: 5px;
+         bottom:10px;
+         border: 0px solid red;
+     }
+     .content5{
+         height: 10%;
+         width: 95%;
+         font-size: larger;
+         border: 0px solid gainsboro;
+         display: flex;
+         position: relative;
+         color: blue;
+         left: 25px;
+         top: -50px;
+         bottom: 40px;
+     border: 0px solid red;
+     }
+    
+     .content6{
+         height: 6%;
+         width: 100%;
+         border: 0px solid gainsboro;
+         position: relative;
+         left: 4px;
+         top: -60px;
+     }
+     
+     
+     .content7{
+         height: 8%;
+         width: 78%;
+         border: 0px solid red;
+         display: flex;
+         position: relative;
+         color: rgb(86, 82, 82);
+         font-size: 13px;
+         left: 25px;
+         bottom: 50px;
+     }
+    
+     .subcon{
+         height:15%;
+         width: 90%;
+         position: relative;
+          bottom: 50px;
+         border: 0px solid red;
+     }
+     
+    
+     .field1{
+          height: 0px !important;
+          width:100%;
+          font-size: 11px;
+          border: 0px solid red;
+          position: relative;
+          bottom: 30px;
+          
+     }
+     .fieldw{
+         height: 5px !important;
+         width:90%;
+         font-size: 11px;
+         position: relative;
+         bottom: 100px;
+         right:5px;
+         
+     }
+    
+     .field2{
+          width:45%;
+          font-size: 11px;
+          display: flex;
+     }
+     
+     .box{
+         display: flex;
+         border: 0px solid blue;
+         position: relative;
+         left: 25px;
+         bottom:20px ;
+         color: rgb(86, 82, 82);
+     }
+    
+     .box2{
+         height: 10%;
+         width: 100%;
+         display: flex;
+         border: 0px solid gainsboro;
+     }
+     .box3{
+         height: 40%;
+         width: 40%;
+         border: 0px;
+         background: 0px;
+         color: rgb(0, 115, 255);
+         font-size: 18px;
+         font-weight: 600;
+         position: relative;
+         right: 30px;
+     }
+     
+     .box4{
+         height: 55%;
+         width: 18%;
+         border: 0px;
+         color: white;
+         font-size: 20px;
+         font-weight: 400;
+        background-color:rgb(0, 115, 255);
+         border-radius: 5px;
+         position: relative; 
+         right: 15px;
+     }
+     
+     .imagecontain{
+         height: 100%;
+         width: 45%;
+         border: 0px solid gainsboro;
+     }
+     
+     .sentence{
+         height: 10%;
+         width: 70%;
+         border: 0px solid green;
+         position: relative;
+         bottom: 100px;
+         font-size: 16px;
+         color: rgb(80, 78, 78);
+         text-align: center;
+         font-weight: 200;
+     }
+     
+}
+@media only screen and (min-width :601px) and (max-width :900px) {
+   
+   .re{
+    border: 0px solid red;
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+   } .maincontainer{
+        height:  750px;
+        width: 1000px;
+        border: 0px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+     }
+    .subcontainer{
+        height: 90%;
+        width: 60%;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+    
+    } 
+    .content{
+        height: 100%;
+        width: 100%;
+        border: 0px solid gainsboro;
+    }
+    .content1{
+        height: 8%;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 500;
+        position: relative;
+        left: 30px;
+        border: 0px solid gainsboro;
+
+    }
+    .content2{
+        height: 6%;
+        width: 60%;
+        font-size: 17px;
+        font-weight: 200;
+        position: relative;
+        left: 30px;
+        border: 0px solid gainsboro;
+    
+    }
+    .content3{
+        height: 20%;
+        width: 90%;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        left: 28px;
+    }
+    .content4{
+        height: 10%;
+        width: 90%;
+        border: 0px solid gainsboro;
+        display: flex;
+        color: rgb(86, 82, 82);
+        font-size: 11px;
+        position: relative;
+        left: 5px;
+        bottom:20px;
+    }
+    .content5{
+        height: 5%;
+        width: 95%;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        color: blue;
+        left: 33px;
+      top:-15px;
+    }
+    .content6{
+        height: 22%;
+        width: 100%;
+        display: flex;
+        border: 0px solid gainsboro;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 10px;
+        bottom: 20px;
+    }
+    .fieldw{
+        height: 100%;
+        width: 90%;
+    }
+    .content7{
+        height: 8%;
+        width: 78%;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        color: rgb(86, 82, 82);
+        font-size: 10px;
+        left: 30px;
+        bottom: 60px;
+    }
+    .subcon{
+        height:10%;
+        width: 100%;
+        border: 0px solid gainsboro;
+        position: relative;
+        left: 0px;
+        top: 10px;
+    }
+    .field1{
+         height: 5px !important;
+         width:40%;
+         font-size: 11px;
+    }
+    .box{
+        display: flex;
+        border: 0px solid blue;
+        position: relative;
+        left: 30px;
+        bottom:60px ;
+        color: rgb(86, 82, 82);
+    }
+    .box2{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        border: 0px solid gainsboro;
+        position: relative;
+        bottom: 40px;
+    }
+    .box3{
+        height: 40%;
+        width: 40%;
+        border: 0px;
+        background: 0px;
+        color: rgb(0, 115, 255);
+        font-size: 15px;
+        font-weight: 600;
+        
+    }
+    .box4{
+        height: 55%;
+        width: 16%;
+        border: 0px;
+        color: white;
+       background-color:rgb(0, 115, 255);
+        border-radius: 5px; 
+        margin-top: 50px;
+    }
+    .imagecontain{
+        height: 100%;
+        width: 45%;
+        border: 0px solid gainsboro;
+    }
+    .sentence{
+        height: 10%;
+        width: 70%;
+        border: 0px solid green;
+        position: relative;
+        bottom: 100px;
+        font-size: 16px;
+        color: rgb(80, 78, 78);
+        text-align: center;
+        font-weight: 200;
+    }
+}
+@media only screen and (min-width :901px) and (max-width :1024px) {
+    .maincontainer{
+        height: 100vh;
+        width: 100vw;
+        border: 0px solid red;
+    }
+    .subcontainer{
+        height: 95%;
+        width: 75%;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+    }
+
+    .content{
+        height: 100%;
+        width: 65%;
+        border: 0px solid gainsboro;
+    }
+    
+    .content1{
+        height: 12%;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 500;
+        position: relative;
+        left: 30px;
+    }
+    .content2{
+        height: 10%;
+        width: 60%;
+        font-size: 20px;
+        font-weight: 200;
+        position: relative;
+        left: 25px;
+        border: 0px solid gainsboro;
+    
+    }
+    .content3{
+        height: 12%;
+        width: 95%;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        left: 15px;
+    }
+    .content4{
+        height: 10%;
+        width: 95%;
+        border: 0px solid gainsboro;
+        display: flex;
+        color: rgb(86, 82, 82);
+        font-size: 12px;
+        position: relative;
+        left: 5px;
+        bottom:20px;
+    }
+    .content5{
+        height: 5%;
+        width: 95%;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        color: blue;
+        left: 20px;
+        top: 5px;
+    }
+    .content6{
+        height: 22%;
+        width: 100%;
+        display: flex;
+        border: 0px solid gainsboro;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 5px;
+    }
+    .content7{
+        height: 8%;
+        width: 78%;
+        border: 0px solid gainsboro;
+        display: flex;
+        position: relative;
+        color: rgb(86, 82, 82);
+        font-size: 13px;
+        left: 20px;
+        bottom: 45px;
+    }
+    
+    .subcon{
+        height:10%;
+        width: 100%;
+        border: 0px solid gainsboro; 
+    }
+    
+    .field1{
+         height: 5px !important;
+         width:45%;
+         font-size: 11px;
+         
+    }
+    
+    .field2{
+         width:45%;
+         font-size: 11px;
+         display: flex;
+    }
+    
+    
+    .box2{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        border: 0px solid gainsboro;
+    }
+    .box3{
+        height: 40%;
+        width: 40%;
+        border: 0px;
+        background: 0px;
+        color: rgb(0, 115, 255);
+        font-size: 15px;
+        font-weight: 600;
+    }
+   
+    .box4{
+        height: 55%;
+        width: 16%;
+        border: 0px;
+        color: white;
+       background-color:rgb(0, 115, 255);
+        border-radius: 5px; 
+    }
+    
+    .imagecontain{
+        height: 100%;
+        width: 35%;
+        border: 0px solid gainsboro;
+    }
+    
+    .sentence{
+        height: 10%;
+        width: 70%;
+        border: 0px solid green;
+        position: relative;
+        bottom: 100px;
+        font-size: 16px;
+        color: rgb(80, 78, 78);
+        text-align: center;
+        font-weight: 200;
+    }
+    .example-margin{
+    display: flex;
+    border: 0px solid red;
+    }
+    .box{
+        display: flex;
+            border: 0px solid blue;
+            position: relative;
+            left: 25px;
+            // bottom:20px ;
+            color: rgb(86, 82, 82); 
+    }
+}
+@media(min-width:260px)and (max-width:460px){
+.maincontainer{
+    margin: 0px;
+}
+}

@@ -1,0 +1,136 @@
+.boxsize {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 34px;
+  
+  }
+  
+  .con {
+    padding-right: 30px;
+    display: flex;
+    padding-top: 5px;
+  
+  }
+  .details{
+    height: 70px;
+    width: auto;
+    border: 0px solid red;
+  }
+  .let{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .con1 {
+    padding-right: 30px;
+    display: flex;
+    // padding-top: 5px;
+  
+  }
+  
+  // .notesshadow:hover {
+  //   box-shadow: 1px 1px 3px 3px rgba(198, 66, 66, 0.87);
+  // }
+  app-icon {
+    visibility: hidden;
+  }
+  
+  .con:hover {
+    app-icon {
+      visibility: visible;
+    }
+  }
+  
+  
+  .card {
+  
+    width: 270px;
+    max-height: 150px;
+    margin: 15px auto 16px auto;
+    border: 1px solid rgb(186, 184, 184);
+     padding:8px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  ::ng-deep .my-custom-dialog-class {
+    mat-dialog-container {
+      padding: 0;
+    }
+  }
+  
+  .grid-getAllNotes {
+    //  display: flex; flex-flow: row wrap;padding-left: 54px;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 5%;
+    flex-wrap: wrap;
+    cursor: pointer;
+  
+  }
+  
+  .list-getAllNotes {
+    flex-direction: column;
+    // box-sizing: border-box;
+    display: flex;
+    margin-left: 0%;
+    // width: 50px;
+    flex-wrap: wrap;
+  
+    .con>mat-card {
+      // padding: 25px;
+      width: 550px;
+    }
+  }
+  .dispalyd{
+    display: flex;
+    flex-direction: row;
+    border: 0px solid red;
+    width: auto;
+    height: 30px;
+  }
+  .dispalydata{
+    display: flex;
+    flex-direction: column;
+    border: 0px solid red;
+    height: 50px;
+    width: 40px;
+  }
+  .initial{
+    border: 0px solid red;
+    font-size: 17px;
+    height: 100px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    background:violet;
+    border-radius: 25px;
+  }
+  .pin{
+    visibility: hidden;
+  }
+  .con:hover{
+    .pin{
+      visibility: visible;
+    }
+  }
+  .hovercontent{
+    display: none;
+  position: absolute;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.591);
+  min-width: 55px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px 0px;
+  z-index: 1;
+  color: white;
+  border-radius: 5px;
+  }
+  .add:hover .hovercontent{
+    display: block;
+  }

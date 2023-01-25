@@ -1,0 +1,85 @@
+<div class="OuterDiv">
+    <div role="button" class="add" *ngIf="!isDeleted">
+        <img class="divImg" src="../../../assets/add_alert_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent">
+            <p>remaind me</p>
+        </div>
+    </div>
+    <div role="button" class="add" *ngIf="!isDeleted">
+        <img (click)="openDialog(notecard)" class="divImg"
+            src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent">
+            <p>collaborator</p>
+        </div>
+    </div>
+
+    <div role="button" class="add" *ngIf="!isDeleted" matTooltip="Background color" [matMenuTriggerFor]="color">
+        <img class="divImg" src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent">
+            <p>Background</p>
+        </div>
+        <mat-menu #color="matMenu" fxLayout="row " fxLayoutAlign="start space-between" fxFlex.md="35%" fxHide.md>
+            <div fxLayout="row wrap" class="colour" fxLayoutAlign="start center" style="padding-left: 3px;">
+                <div *ngFor="let colour of colorarray" class="colorBox">
+                    <button class="colors" mat-mini-fab (click)="updatecolor(colour?.Colorcode)"
+                        (click)="openSnackBar('color updated successfully','dismiss')" mat-icon-button mat-raised-button
+                        [style.background]="colour?.Colorcode"></button>
+                </div>
+            </div>
+        </mat-menu>
+    </div>
+    <div role="button" class="add" *ngIf="!isDeleted">
+        <img class="divImg" src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent">
+            <p>Add image</p>
+        </div>
+    </div>
+    <div role="button" class="add" *ngIf="!isArchieve && !isDeleted">
+        <img class="divImg" (click)=" archive()" (click)="openSnackBar('Note archived successfully','dismiss')"
+            src="../../../assets/archive_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent2">
+            <p>Archive</p>
+        </div>
+    </div>
+
+    <div role="button" class="add" *ngIf="isArchieve && !isDeleted" (click)="unArchive()"
+        (click)="openSnackBar('Note unarchived successfully','dismiss')">
+        <img class="divImg" src="../../../assets/unarchive_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent">
+            <p>Unarchive</p>
+        </div>
+    </div>
+
+    <div class="add" *ngIf="!isDeleted" mat-icon-button matTooltip="More" [matMenuTriggerFor]="menu">
+        <img class="divImg" src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.svg">
+        <div class="hovercontent3">
+            <p>More</p>
+        </div>
+        <mat-menu #menu="matMenu" yPosition="below">
+            <button mat-menu-item class="matmenuBtn" (click)="deleteNote()"
+                (click)="openSnackBar('Note deleted successfully','dismiss')">Delete note</button>
+            <button mat-menu-item class="matmenuBtn">Add Label</button>
+            <button mat-menu-item class="matmenuBtn">Add drawing</button>
+            <button mat-menu-item class="matmenuBtn">Make a copy</button>
+            <button mat-menu-item class="matmenuBtn">Show check boxes</button>
+            <button mat-menu-item class="matmenuBtn">Copy to google Docs</button>
+        </mat-menu>
+    </div>
+    <div *ngIf="isDeleted" fxLayout="row" fxLayourAlign="center" class="add">
+        <div matTooltip="Delete forever" class="bott">
+            <img class="icons" (click)="openSnackBar('Note deleted forever','dismiss')" (click)="deleteforevernote()"
+                src="../../../assets/delete_forever_FILL0_wght400_GRAD0_opsz48.svg">
+            <div class="hovercontent1">
+                <p>Deleteforever</p>
+            </div>
+        </div>
+        <div class="buttons" matTooltip="Restore">
+            <img class="icons" src="../../../assets/restore_from_trash_FILL0_wght400_GRAD0_opsz48.svg"
+                (click)="openSnackBar('Note restored successfully','dismiss')" (click)=" restorenote()">
+            <div class="hovercontent4">
+                <p>Restore</p>
+            </div>
+        </div>
+    </div>
+
+</div>

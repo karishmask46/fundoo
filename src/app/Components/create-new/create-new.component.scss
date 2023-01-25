@@ -1,0 +1,85 @@
+.maincontainer{
+    height: auto;
+    width: 45vw;
+    border: 1px solid gainsboro;
+    box-shadow: 5px 5px 5px gainsboro;
+    position: relative;
+    left: 25%;
+    top: 5%;
+}
+
+.title{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    border: 0px solid red;
+
+}
+.title1{
+    border: 0px solid gray;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font-weight: bold;
+    letter-spacing: .00625em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-decoration: center;
+    margin-bottom: 10px;
+}
+.descript{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0px solid red;
+    justify-content: center;
+}
+.title2{
+    border: 0px solid gray;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font-weight: bold;
+    letter-spacing: .00625em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-decoration: center;
+}
+
+.button{
+    height: 100%;
+    width: 10%;
+   border: 0px;
+   background: 0px ;
+   font-size: medium;
+   border: 0px solid greenyellow; 
+}
+
+.close1{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border: 0px solid greenyellow;
+}
+.icons{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    border: 0px solid green;   
+}
+@media only screen and (min-width :320px) and (max-width :480px) {
+    .maincontainer{
+        height: auto;
+        width: 60vw;
+    }
+}

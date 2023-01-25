@@ -1,0 +1,22 @@
+<form [formGroup]="createForm" >
+    <mat-card class="maincontainer">
+             <div class="title" *ngIf="show">
+                <input name="text" class="title1" type="text" placeholder="title" formControlName="title">
+                <mat-error></mat-error>
+                <img height="30px" width="30px" src="../../../assets/push_pin_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+             </div>
+             <div class="descript" *ngIf="show || !show" (click)="isShow()">
+                <input class="title2" type="text" matInput placeholder="Take a note..." formControlName="description">
+                <mat-error> </mat-error>
+                <div class="icons" *ngIf="!show" >
+                   <img  height="25px" width="25px" src="../../../assets/check_box_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                   <img height="25px" width="25px" src="../../../assets/brush_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                   <img height="25px" width="25px" src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+                </div>
+             </div>
+             <div class="close1" *ngIf="show">
+                <app-icon [notecard]="createForm"></app-icon>
+                <button mat-raised-button  class="button"  (click)="close()">Close</button>
+             </div>  
+    </mat-card>
+    </form>

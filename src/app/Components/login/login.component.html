@@ -1,0 +1,55 @@
+<form [formGroup]="loginForm" (ngSubmit)="onNext()">
+    <div class="maindiv" >
+       <div class="subdic" >
+           <div class="content1" fxLayout="row" fxLayoutAlign="center end"><span style="color:blue;">F</span>
+               <span style="color:red;">u</span>
+               <span style="color:rgba(255, 166, 0, 0.785);">n</span>
+               <span style="color:blue;">d</span>
+               <span style="color:green;">o</span><span style="color:red;">o</span>
+           </div>
+           <div class="k1"> <span> Sign in</span>
+           </div>
+           <div class="k2">
+               <span>Use your Fundoo Account</span>
+           </div>
+           <div class="k3" fxLayout="column" fxLayoutAlign="center stretch">
+               <mat-form-field class="field1" appearance="outline">
+                   <mat-label>Email or phone</mat-label>
+                   <input matInput placeholder="" formControlName="emailorphone" class="let">
+                   <mat-error > enter valid email or phone</mat-error>
+               </mat-form-field>
+           </div>
+           <div class="button">
+               <button class="box1" mat-button>Forgot email?</button>
+           </div>
+           <div class="k6" fxLayout="column" fxLayoutAlign="center stretch">
+               <mat-form-field class="field1" appearance="outline">
+                   <mat-label>Password</mat-label>
+                   <input type="password" matInput placeholder="" formControlName="password" [type]="_pwdType">
+                   <mat-error> enter valid password</mat-error>
+               </mat-form-field>
+           </div>
+           <div class="box">
+               <mat-checkbox class="example-margin" (click)="toggleShow()" > <span *ngIf="!_show"> Show password</span>
+                 <span *ngIf="_show">Hide password</span> </mat-checkbox>
+           </div>
+           <div class="button1">
+               <button class="box2"  routerLink="/forgotpassword"  mat-button>Forgot password?</button>
+           </div>
+           <div class="p3">
+               <span>Not your computer?Use Guest mode to sign in privately.</span>
+           </div>
+           <div class="button3">
+               <button class="box4" mat-button>Learn more</button>
+           </div>
+           <div class="get">
+           <div class="p7">
+               <button class="box5" mat-button  routerLink="/registration" >Create account</button>
+           </div>
+           <div class="p8" >
+               <button class="box6" mat-button (click)="openSnackBar('Login successfully','dismiss')">Next</button>
+           </div>
+       </div>
+       </div>
+   </div>
+   </form>

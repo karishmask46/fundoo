@@ -1,0 +1,592 @@
+.maindiv {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    border: 0px solid gainsboro;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+ }
+ 
+ 
+ .subdic {
+    height: 90%;
+    width: 40%;
+    display: flex;
+    border: 1px solid gainsboro;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 10px;
+ }
+ 
+ 
+ 
+ .content1 {
+    height: 12%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+    border: 0px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .k1 {
+    width: 100%;
+    font-size: 25px;
+    height: 10%;
+    border: 0px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ 
+ .k2 {
+    width: 100%;
+    font-size: medium;
+    height: 5%;
+    display: flex;
+    border: 0px solid red;
+    align-items: flex-start;
+    justify-content: center;
+ }
+ 
+ .k3 {
+    display: flex;
+    border: 0px solid yellow;
+    height: 10%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+ 
+ .field1 {
+    position: relative;
+    left: 50px;
+    top: 20px;
+ }
+ 
+ .box1 {
+    position: relative;
+    left: 50px;
+    top: 30px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+    font-weight: 600;
+ }
+ 
+ .box {
+    display: flex;
+    border: 0px solid blue;
+    position: relative;
+    left: 55px;
+    bottom: -55px;
+    color: rgb(86, 82, 82);
+ }
+ 
+ 
+ 
+ .k4 {
+    height: 45%;
+    width: 76%;
+    font-size: 15px;
+    color: rgb(113, 104, 104);
+ }
+ 
+ 
+ .k6 {
+    position: relative;
+    border: 0px solid yellow;
+    height: 10%;
+    width: 80%;
+    top: 30px;
+ 
+ }
+ 
+ .box2 {
+    position: relative;
+    left: 50px;
+    top: 60px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+    font-weight: 600;
+ }
+ 
+ .box3 {
+    position: relative;
+    left: 50px;
+    top: 20px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+    font-weight: 600;
+ }
+ 
+ .box4 {
+    position: relative;
+    left: 55px;
+    top: 35px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+ }
+ 
+ .k7 {
+    height: 45%;
+    width: 76%;
+    font-size: 15px;
+    color: rgb(113, 104, 104);
+ }
+ 
+ .p3 {
+    display: flex;
+    border: 0px solid greenyellow;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 70px;
+    left: 60px;
+ 
+ }
+ // .get{
+ //    margin-top: 40px;
+ //   display: flex;
+ //   border: 1px solid red;
+ //   height: 10%;
+ //   width: 80%;
+ //   justify-content: space-around;
+ // }
+ 
+ .box5 {
+    position: relative;
+    left: 55px;
+    top: 70px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+    font-weight: 600;
+ }
+ 
+ .box6 {
+    position: relative;
+    left: 400px;
+    top: 50px;
+    border: 0px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 12%;
+    background: rgb(0, 115, 255);
+    border-radius: 5px;
+ }
+ 
+ 
+ @media only screen and (min-width :100px) and (max-width :320px) {
+    .p8 {
+       position: relative;
+       right: 80px;
+    }
+ 
+    .maindiv {
+       height: 800px;
+       width: 360px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+ 
+    .subdic {
+       width: 100%;
+       height: 100%;
+       display: flex;
+       border: 0px solid red;
+       flex-direction: column;
+       // align-items: center;
+       // justify-content: center;
+    }
+ 
+    .box {
+       display: flex;
+       border: 0px solid blue;
+       position: relative;
+       left: 55px;
+       bottom: -55px;
+       color: rgb(86, 82, 82);
+    }
+ }
+ 
+ @media only screen and (min-width :320px) and (max-width :600px) {
+   
+    .maindiv {
+       height: 120vh;
+       width: 100vw;
+       border: 0px solid red;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+ 
+    .subdic {
+       width: 100%;
+       height: 100%;
+       display: flex;
+       border: 0px solid red;
+       flex-direction: column;
+       // align-items: center;
+       // justify-content: center;
+    }
+ 
+    .content1 {
+       height: 10%;
+       width: 100%;
+       font-size: 25px;
+       font-weight: 500;
+       border: 0px solid black;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+ 
+    .k1 {
+       width: 100%;
+       font-size: 25px;
+       height: 10%;
+       border: 0px solid red;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+ 
+    .k2 {
+       width: 100%;
+       font-size: medium;
+       height: 5%;
+       display: flex;
+       border: 0px solid red;
+       align-items: flex-start;
+       justify-content: center;
+    }
+ 
+    .k3 {
+       display: flex;
+       border: 0px solid yellow;
+       height: 10%;
+       width: 80%;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+    }
+ 
+    .field1 {
+       position: relative;
+       left: 40px;
+       top: 20px;
+    }
+ 
+    .box1 {
+       position: relative;
+       left: 40px;
+       top: 20px;
+       border: 0px solid red;
+       color: rgb(0, 115, 255);
+       background: 0px;
+       font-weight: 600;
+    }
+ 
+    .box {
+       display: flex;
+       border: 0px solid blue;
+       position: relative;
+       left: 45px;
+       bottom: -20px;
+       color: rgb(86, 82, 82);
+    }
+ 
+    .k6 {
+       position: relative;
+       border: 0px solid yellow;
+       height: 10%;
+       width: 80%;
+       top: 10px;
+    }
+ 
+    .box2 {
+       position: relative;
+       left: 40px;
+       top: 20px;
+       border: 0px;
+       color: rgb(0, 115, 255);
+       background: 0px;
+       font-weight: 600;
+    }
+ .p3{
+    display: flex;
+    border: 0px solid greenyellow;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 30px;
+    left: 45px;
+ }
+ .box4{
+    position: relative;
+    left: 40px;
+    top: 10px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+ }
+ .box5{
+    position: relative;
+    left: 40px;
+    top: 50px;
+    border: 0px;
+    color: rgb(0, 115, 255);
+    background: 0px;
+    font-weight: 600;
+ }
+    .box6 {
+       position: relative;
+       left: 300px;
+       top: 20px;
+       border: 0px;
+       color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 40px;
+       width: 20%;
+       background: rgb(0, 115, 255);
+       border-radius: 5px;
+    }
+ 
+ }
+ 
+ @media only screen and (min-width :600px) and (max-width :1024px) {
+    .maindiv {
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       border: 0px solid gainsboro;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    
+    }
+    
+    
+    .subdic {
+       height: 90%;
+       width: 40%;
+       display: flex;
+       border: 1px solid gainsboro;
+       flex-direction: column;
+       flex-wrap: wrap;
+       border-radius: 10px;
+    }
+    
+    
+    
+    .content1 {
+       height: 12%;
+       width: 100%;
+       font-size: 25px;
+       font-weight: 500;
+       border: 0px solid black;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    
+    .k1 {
+       width: 100%;
+       font-size: 25px;
+       height: 10%;
+       border: 0px solid red;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    
+    .k2 {
+       width: 100%;
+       font-size: medium;
+       height: 5%;
+       display: flex;
+       border: 0px solid red;
+       align-items: flex-start;
+       justify-content: center;
+    }
+    
+    .k3 {
+       display: flex;
+       border: 0px solid yellow;
+       height: 10%;
+       width: 80%;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+    }
+    
+    .field1 {
+       position: relative;
+       left: 50px;
+       top: 20px;
+    }
+    
+    .box1 {
+       position: relative;
+       left: 50px;
+       top: 30px;
+       border: 0px;
+       color: rgb(0, 115, 255);
+       background: 0px;
+       font-weight: 600;
+    }
+    
+    .box {
+       display: flex;
+       border: 0px solid blue;
+       position: relative;
+       left: 55px;
+       bottom: -55px;
+       color: rgb(86, 82, 82);
+    }
+    
+    
+    
+    .k4 {
+       height: 45%;
+       width: 76%;
+       font-size: 15px;
+       color: rgb(113, 104, 104);
+    }
+    
+    
+    .k6 {
+       position: relative;
+       border: 0px solid yellow;
+       height: 10%;
+       width: 80%;
+       top: 30px;
+    
+    }
+    
+    .box2 {
+       position: relative;
+       left: 50px;
+       top: 60px;
+       border: 0px;
+       color: rgb(0, 115, 255);
+       background: 0px;
+       font-weight: 600;
+    }
+    
+    .box3 {
+       position: relative;
+       left: 50px;
+       top: 20px;
+       border: 0px;
+       color: rgb(0, 115, 255);
+       background: 0px;
+       font-weight: 600;
+    }
+    
+    .box4 {
+       position: relative;
+       left: 43px;
+       top: 35px;
+       border: 0px;
+       color: rgb(0, 115, 255);
+       background: 0px;
+    }
+    
+    .k7 {
+       height: 45%;
+       width: 76%;
+       font-size: 15px;
+       color: rgb(113, 104, 104);
+    }
+    
+    .p3 {
+       display: flex;
+       border: 0px solid greenyellow;
+       height: 10%;
+       width: 100%;
+       position: relative;
+       top: 70px;
+       left: 50px;
+    
+    }
+    // .get{
+    //    margin-top: 40px;
+    //   display: flex;
+    //   border: 1px solid red;
+    //   height: 10%;
+    //   width: 80%;
+    //   justify-content: space-around;
+    // }
+    
+    .box5 {
+       position: relative;
+       left: 40px;
+       top: 70px;
+       border: 0px;
+       color: rgb(0, 115, 255);
+       background: 0px;
+       font-weight: 600;
+    }
+    
+    .box6 {
+       position: relative;
+       left: 400px;
+       top: 50px;
+       border: 0px;
+       color: white;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: 30px;
+       width: 12%;
+       background: rgb(0, 115, 255);
+       border-radius: 5px;
+    }
+ }
+ @media only screen and (min-width :600px) and (max-width :1024px) {
+    .maindiv {
+       height: 100vh;
+       width: 100vw;
+       border: 0px solid red;
+    }
+ 
+    .subdic {
+       height: 5000px;
+       width: 600px;
+       border: 1px solid gainsboro;
+       margin-top: 30px;
+       margin-left: 30px;
+    }
+ 
+    .field1 {
+       height: 70px;
+       width: 500px;
+    }
+ 
+    .button3 {
+       position: relative;
+       top: 10px;
+    }
+ 
+    .box6 {
+       margin-left: 100px;
+    }
+ }

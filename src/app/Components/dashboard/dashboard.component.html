@@ -1,0 +1,75 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+    <mat-toolbar class="example-toolbar">
+      <button mat-icon-button (click)="snav.toggle()" class="menubutton"><mat-icon>menu</mat-icon></button>
+      <div class="image">
+        <img height="100%" width="40px" src="../../assets/keep_2020q4_48dp.png" alt="">
+      </div>
+      <div class="logo">
+        <span style="color:blue;">F</span>
+        <span style="color:red;">u</span>
+        <span style="color:rgba(255, 166, 0, 0.785);">n</span>
+        <span style="color:blue;">d</span>
+        <span style="color:green;">o</span><span style="color:red;">o</span>
+      </div>
+      <div class="searchbar">
+        <mat-icon>search</mat-icon>
+        <input class="bar1" type="text" (keyup)="searchnote($event)" matInput placeholder="Search">
+      </div>
+      <div class="icon2">
+        <img height="65%" width="8%" src="../../assets/refresh_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <!-- <img  *ngIf="view"  height="65%" width="8%" src="../../assets/view_agenda_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+         
+            <img *ngIf="!view"  height="65%" width="8%"  src="../../../assets/grid_view_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
+        <div class="viewbar" *ngIf="!view" matTooltip="List view" (click)="onClickView()">
+          <!-- <mat-icon>view_stream</mat-icon> -->
+          <img height="55%" width="60%" src="../../assets/view_agenda_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </div>
+        <div class="gridview" *ngIf="view" matTooltip="Grid view" (click)="onClickView()">
+          <!-- <mat-icon>view_module</mat-icon> -->
+          <img height="55%" width="60%" src="../../../assets/grid_view_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        </div>
+  
+        <img height="65%" width="8%" src="../../assets/settings_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <img height="65%" width="8%" src="../../assets/apps_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+        <img height="65%" width="8%" (click)="clickperson()" src="../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+      </div>
+    </mat-toolbar>
+    <mat-sidenav-container class="example-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav class="list" #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+        [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
+        <mat-nav-list routerLink="/dashboard/Notes" class="list1" style="cursor: pointer;">
+          <div class="label2" >
+            <img height="100%" width="30px" src="../../../assets/lightbulb_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </div>
+          <a >Notes</a>
+        </mat-nav-list>
+        <mat-nav-list routerLink="" class="list1"  style="cursor: pointer;">
+          <div class="label2">
+            <img height="100%" width="30px" src="../../../assets/notifications_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </div>
+          <a>Remainders</a>
+        </mat-nav-list>
+        <mat-nav-list class="list1" style="cursor: pointer;">
+          <div class="label2" >
+            <img height="100%" width="30px" src="../../assets/edit_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </div>
+          <a>Edit label</a>
+        </mat-nav-list>
+        <mat-nav-list routerLink="/dashboard/Archive" class="list1" style="cursor: pointer;">
+          <div class="label2" style="cursor: pointer;">
+            <img height="100%" width="30px" src="../../assets/archive_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </div>
+          <a>Archive</a>
+        </mat-nav-list>
+        <mat-nav-list routerLink="/dashboard/Trash" class="list1" style="cursor: pointer;">
+          <div class="label2" style="cursor: pointer;">
+            <img height="100%" width="30px" src="../../assets/delete_FILL0_wght400_GRAD0_opsz48.svg" alt="">
+          </div>
+          <a>Trash</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

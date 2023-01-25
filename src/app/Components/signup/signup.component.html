@@ -1,0 +1,68 @@
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="maincontainer" fxLayout="row" fxLayoutAlign="center center">
+        <div fxLayout="row" fxLayoutAlign="center center" class="subcontainer">
+            <div class="content">
+                <div class="content1" fxLayout="row" fxLayoutAlign="start end">
+                    <span style="color:blue;">F</span>
+                    <span style="color:red;">u</span>
+                    <span style="color:rgba(255, 166, 0, 0.785);">n</span>
+                    <span style="color:blue;">d</span>
+                    <span style="color:green;">o</span><span style="color:red;">o</span>
+                </div>
+                <div class="content2" fxLayout="row" fxLayoutAlign="start center"><p>Create your Fundoo
+                        account</p></div>
+                <div class="subcon" fxLayout="row" fxLayoutAlign="space-evenly start">
+                    <mat-form-field class="field1" appearance="outline">
+                        <mat-label>First name</mat-label>
+                        <input matInput placeholder="firstName" formControlName="firstName">
+                        <mat-error> enter valid first name</mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="field1" style="font-size:11px ;" appearance="outline">
+                        <mat-label>Last name</mat-label>
+                        <input matInput placeholder="lastName" formControlName="lastName">
+                        <mat-error> enter valid last name</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="content3" fxLayout="column" fxLayoutAlign="center stretch">
+                    <mat-form-field style="font-size:11px ;" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input matInput placeholder="Username" formControlName="email">
+                        <mat-error> enter valid user name</mat-error>
+                    </mat-form-field>
+                    <span class="content4">you can use letters,numbers & periods</span>
+                </div>
+                <div class="content5">use my current email address instead</div>
+                <div class="content6" fxLayout="row" fxLayoutAlign="space-evenly center">
+                    <mat-form-field style="font-size:11px ;" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input type="password" matInput placeholder="password" formControlName="Password"
+                            [type]="_pwdType">
+                        <mat-error> enter valid password</mat-error>
+                    </mat-form-field>
+                    <mat-form-field style="font-size:11px ;" appearance="outline">
+                        <mat-label>Confirm</mat-label>
+                        <input type="password" matInput placeholder="ConfirmPassword" formControlName="ConfirmPassword"
+                            [type]="_pwdType">
+                        <mat-error> enter valid password</mat-error>
+                    </mat-form-field>
+                </div>
+                <div class="content7">
+                    use 8 or more characters with a mix of letters,numbers & symbols</div>
+                <div class="box">
+                    <mat-checkbox class="example-margin" (click)="toggleShow() "> <span *ngIf="!_show"> Show
+                            password</span>
+                        <span *ngIf="_show">Hide password</span></mat-checkbox>
+                </div>
+                <div class="box2" fxLayout="row" fxLayoutAlign="space-between center">
+                    <button class="box3" mat-button routerLink="/signin">Sign in instead</button>
+                    <button class="box4" mat-raised-button color="primary"
+                        (click)="openSnackBar('Registered successfully','dismiss')">Register</button>
+                </div>
+            </div>
+            <div class="imagecontain" fxLayout="column" fxLayoutAlign="center center">
+                <img height="80%" width="70%" src="../../../assets/googleregister.svg" alt="">
+                <span class="sentence" fxLayout="row">One account.All of Fundoo working for you. </span>
+            </div>
+        </div>
+    </div>
+</form>

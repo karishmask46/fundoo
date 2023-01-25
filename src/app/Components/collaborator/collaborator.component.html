@@ -1,0 +1,57 @@
+<div class="maindiv">
+    <div class="heading">
+        <h2>Collaborators</h2>
+    </div>
+    <hr>
+    <div>
+        <div class="owner">
+            <p class="initial">{{firstname | shortname}}</p>
+            <!-- <img height="10%" width="10%" src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
+            <div style="padding-left: 10px;">
+                <b>{{firstname}}(Owner)</b>
+                <p>{{emailorphone}}</p>
+            </div>
+        </div>
+        <div class="dispalydata" *ngFor="let display of displayarray">
+            <div class="let">
+                <p class="initial">{{display.firstName | shortname }}</p>
+                <!-- <img height="10%" width="10%" src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
+                <div style="padding-left: 10px;">
+                    <b>{{display.firstName}}</b>
+                    <p>{{display.email}}</p>
+                </div>
+            </div>
+            <div class="get">
+                <img height="10%" width="10%" class="personaddition"
+                    src="../../../assets/close_FILL0_wght400_GRAD0_opsz48.svg" (click)="removecollab(display.userId)"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="dispalydata" >
+            <div class="let">
+                <div class="tour">
+                <img  class="personadd"
+                    src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.svg" alt=""></div>
+                <div>
+                    <input [(ngModel)]="inputmail" class="addcollab" (keyup)="searchcollab($event)" type="text" name=""
+                        id="" [matMenuTriggerFor]="menu" placeholder="person or email to share">
+                </div>
+            </div>
+            <div class="get">
+                <img height="8%" (click)="collaborator()" class="personaddition" width="8%"
+                    src="../../../assets/done_FILL0_wght400_GRAD0_opsz48.svg" alt="" *ngIf="inputmail !=''"
+                    ngDefaultControl>
+                <mat-menu #menu="matMenu">
+                    <div *ngFor="let collab of collabarray " class="listmails">
+                        <mat-list-item role="listitem" (click)=" emailchoose(collab)">{{collab.email}}</mat-list-item>
+                    </div>
+                </mat-menu>
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        <button class="btn" (click)="cancelclick()">Cancel</button>
+        <button class="btn" (click)=" onsaveclick()">Save</button>
+    </div>
+</div>

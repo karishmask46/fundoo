@@ -34,6 +34,7 @@ import { CollaboratorComponent } from './Components/collaborator/collaborator.co
 import { FilterPipe } from './filter.pipe';
 import { ShortnamePipe } from './shortname.pipe';
 import { AuthenticationGuard } from './Components/authentication.guard';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +72,8 @@ import { AuthenticationGuard } from './Components/authentication.guard';
     MatDialogModule,
     FormsModule ,
     MatMenuModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    DragDropModule
   ],
   providers: [AuthenticationGuard],
   bootstrap: [AppComponent]

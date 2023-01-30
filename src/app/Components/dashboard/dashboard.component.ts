@@ -1,3 +1,4 @@
+
 import { MediaMatcher } from '@angular/cdk/layout';
 import { ChangeDetectorRef, Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
@@ -49,6 +50,8 @@ export class DashboardComponent implements OnDestroy {
   }
     clickperson(){
       localStorage.removeItem('token');
+      localStorage.removeItem('collaborator')
+      localStorage.removeItem('collaboratoremail')
        this.router.navigateByUrl('/signin')
     }
 }

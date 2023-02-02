@@ -186,7 +186,9 @@
     background: rgb(0, 115, 255);
     border-radius: 5px;
  }
- 
+ .error{
+   color: red;
+ }
  
  @media only screen and (min-width :100px) and (max-width :320px) {
     .p8 {

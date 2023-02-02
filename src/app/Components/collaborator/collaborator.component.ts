@@ -48,7 +48,13 @@ displayarray:any
   this.dialogRef.close(CollaboratorComponent)
  }
  cancelclick(){
-  this.dialogRef.close()
+  const dialogRef = this.dialog.open(UpdateComponent, {
+    width: '600px',
+    height: 'auto',
+    panelClass: 'my-custom-dialog-class',
+    data:this.data
+  });
+  this.dialogRef.close(CollaboratorComponent)
  }
   searchcollab(k: any) {
     let data = {

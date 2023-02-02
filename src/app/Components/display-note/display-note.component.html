@@ -1,6 +1,6 @@
 <div class="grid-getAllNotes" [ngClass]="isList ? 'list-getAllNotes' : 'grid-getAllNotes'">
-    <div *ngFor="let notes of childMessage | filter:search" class="con">
-        <mat-card class="card" [style.background]="notes.color" cdkDrag>
+    <div *ngFor="let notes of childMessage | filter:search" class="con" >
+        <mat-card class="card" [style.background]="notes.color" cdkDrag >
             <div class="details">
                 <div class="let">
                     <h2 (click)="openDialog(notes)">{{notes.title}}</h2>

@@ -18,5 +18,5 @@
 <div class="note3" [style.background]="color">
     <app-icon [notecard]="data" (trashrefresh)="colorpallate($event)"></app-icon>
     <button class="note4" (click)="onNoClick()"
-        (click)="openSnackBar('Note updated successfully','dismiss')">Close</button>
+        (click)="openSnackBar('Note updated successfully','dismiss')" (click)="closed()">Close</button>
 </div>

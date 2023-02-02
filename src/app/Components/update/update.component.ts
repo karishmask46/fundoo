@@ -44,23 +44,20 @@ collabdata:any
       console.log(response);
       this.updaterefresh.emit(response);
     })
-    this.dialogRef.close();  
   }
-  emitcolor(event:any){
+  closed(){
+    this.dialogRef.close()
+  }
+  emitcolor(event:any){  
   this.onNoClick();
   }
   colorpallate(event:any) {
+    this.color=event
     this.onNoClick()
   }
   openSnackBar(message: string, action: string) {
-    this._snackBar.open(message, action,{duration: 1000});
+    this._snackBar.open(message, action,{duration: 100});
   }
-  // recivemessage(event:any){
-  //   console.log(event);
-  // this.collabdata=this.data
-  //   console.log(this.collabdata);
-  //   this.onNoClick()
-  // }
   onclickletter(){
     const dialogRef = this.dialog.open(CollaboratorComponent, {
       width:'35%',

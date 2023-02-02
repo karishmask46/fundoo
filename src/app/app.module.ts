@@ -8,7 +8,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
@@ -35,6 +35,7 @@ import { FilterPipe } from './filter.pipe';
 import { ShortnamePipe } from './shortname.pipe';
 import { AuthenticationGuard } from './Components/authentication.guard';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import { HttpErrorInterceptor } from './http-error.interceptor';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +76,11 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatSnackBarModule,
     DragDropModule
   ],
-  providers: [AuthenticationGuard],
+  providers: [AuthenticationGuard,{
+    provide: HTTP_INTERCEPTORS,
+    useClass: HttpErrorInterceptor,
+    multi: true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

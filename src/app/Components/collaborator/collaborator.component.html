@@ -5,7 +5,7 @@
     <hr>
     <div>
         <div class="owner">
-            <p class="initial">{{firstname | shortname}}</p>
+            <p class="initial">{{firstname | shortname }}</p>
             <!-- <img height="10%" width="10%" src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
             <div style="padding-left: 10px;">
                 <b>{{firstname}}(Owner)</b>
@@ -14,7 +14,7 @@
         </div>
         <div class="dispalydata" *ngFor="let display of displayarray">
             <div class="let">
-                <p class="initial">{{display.firstName | shortname }}</p>
+                <p class="initial">{{display.firstName | shortname  }}</p>
                 <!-- <img height="10%" width="10%" src="../../../assets/account_circle_FILL0_wght400_GRAD0_opsz48.svg" alt=""> -->
                 <div style="padding-left: 10px;">
                     <b>{{display.firstName}}</b>

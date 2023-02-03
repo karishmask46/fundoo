@@ -1,5 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog';
 
 import { CollaboratorComponent } from './collaborator.component';
 
@@ -9,7 +10,7 @@ describe('CollaboratorComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CollaboratorComponent ],imports:[HttpClientModule]
+      declarations: [ CollaboratorComponent ],imports:[HttpClientModule,MatDialogModule]
     })
     .compileComponents();
   });

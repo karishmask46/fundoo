@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MatDialogModule } from '@angular/material/dialog';
+import { FilterPipe } from 'src/app/filter.pipe';
 
 import { DisplayNoteComponent } from './display-note.component';
 
@@ -8,7 +10,7 @@ describe('DisplayNoteComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DisplayNoteComponent]
+      declarations: [ DisplayNoteComponent],imports:[MatDialogModule]
     })
     .compileComponents();
   });

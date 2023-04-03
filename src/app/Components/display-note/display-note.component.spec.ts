@@ -1,6 +1,6 @@
+import { PipeCollector } from '@angular/compiler/src/template_parser/binding_parser';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialogModule } from '@angular/material/dialog';
-import { FilterPipe } from 'src/app/filter.pipe';
 
 import { DisplayNoteComponent } from './display-note.component';
 

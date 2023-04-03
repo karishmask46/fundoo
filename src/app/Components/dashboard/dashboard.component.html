@@ -15,16 +15,16 @@
       <mat-icon>search</mat-icon>
       <input class="bar1" type="text" (keyup)="searchnote($event)" matInput placeholder="Search">
     </div>
-   <div class="boxsearch">
-    <input type="checkbox" name="tag" id="label">
-            <div class="searchbox">
-                <input type="text" placeholder="Search" (keyup)="searchnote($event)">
-                <label for="label" class="btn">
-                    <img height="60%" width="60%" src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.svg">
-                </label>
-            </div>
+    <div class="boxsearch">
+      <input type="checkbox" name="tag" id="label">
+      <div class="searchbox">
+        <input type="text" placeholder="Search" (keyup)="searchnote($event)">
+        <label for="label" class="btn">
+          <img height="60%" width="60%" src="../../../assets/search_FILL0_wght400_GRAD0_opsz48.svg">
+        </label>
+      </div>
 
-   </div>
+    </div>
     <div class="icon2">
       <img height="65%" width="8%" class="asset" src="../../assets/refresh_FILL0_wght400_GRAD0_opsz48.svg" alt="">
       <div class="viewbar" *ngIf="!view" matTooltip="List view" (click)="onClickView()">
